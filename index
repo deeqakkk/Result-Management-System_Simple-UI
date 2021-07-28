@@ -1,0 +1,50 @@
+ <div id="box1">
+        <button id="button" type="button" class="btn btn-info btn-lg">Login as Admin</button>
+            <form action="" id="form">
+            <p class="userid"><input type="text" placeholder="User ID" /></p>
+            <p class="password"><input type="password" placeholder="Password" /></p>
+            <p class="login-btn"><input type="submit"   value="Sign In" /></p>
+        </form>
+    </div>
+
+    CSS
+
+    #box1 {
+  align-items: center;
+  margin-left: 24rem;
+  margin-top: 10rem;
+  padding:50px;
+  width: 300px;
+  z-index:10;
+  position:relative;  
+   
+}
+
+#box1 form {
+ background:#7e064e;
+ top:7rem !important;
+ border-radius: 5% ;
+ padding:25px;
+ display:none;
+ position:absolute;
+ 
+}
+#button {
+  width:250px;
+  color:#fff;
+  padding:3px 10px;
+  border:1px solid white;  
+  margin-bottom:15px;  
+  cursor:pointer;
+  
+}
+input[type="submit"] {
+  background:none;
+  color:#fff;
+  padding:5px;
+  text-align:left;
+  cursor:pointer;
+}
+input[type="submit"]:hover{
+  background-color: #8d0d5a;
+}

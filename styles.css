@@ -1,0 +1,71 @@
+body {
+  background-color: #91C788;
+  /* background-image: -webkit-linear-gradient(63deg, #F5F7B2 50%, #F21170  50%); */
+  min-height: 725px;
+  font-family: "Merriweather", serif;
+}
+.header {
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.report {
+  margin-left: 40rem;
+}
+
+/*LOGIN FORM */
+
+.login {
+  width: 250px;
+  margin-bottom: 2rem;
+}
+
+/* Report Card */
+.container-fluid {
+  margin-left: 17rem;
+  margin-top: 4rem;
+}
+.cols {
+  border: solid 1px black;
+  padding: 5px;
+}
+.container-fluid > col:nth-child(even) {
+  background: gold;
+}
+
+/* ADMIN DASHBOARD */
+
+.admin h4 {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.tabs a {
+  font-style: bold;
+  background-color: rgb(70, 238, 182);
+  color: black;
+}
+.record-table {
+  background: rgb(70, 238, 182);
+}
+.std-details {
+  width: 45rem;
+  display: inline-block;
+}
+
+.marks {
+  position: relative;
+  right: 0.7rem;
+  height: 20px;
+  color: black !important;
+  background: none;
+  border: none;
+  padding-left: 10px;
+}
+*:focus {
+  outline: 0 !important;
+  }
+::placeholder { 
+  color: white;
+  font-style: bold;
+  opacity: 1; 
+}

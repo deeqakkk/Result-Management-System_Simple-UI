@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: #28B5B5;">
+  <button type="button" class="btn header btn- btn-lg btn-block">
+    <h1>Welcome, "Amit Verma." </h1>
+  </button>
+  <div class="container admin">
+    <h1>Amrita Public School</h1>
+    <h4>Academic Session 2020-2021.</h4>
+    <hr>
+    <ul class="nav  nav-pills .nav-stacked">
+      <li class="tabs active"><a data-toggle="tab" href="#home">VIEW RECORDS</a></li>
+      <li class="tabs"><a data-toggle="tab" href="#menu1">CREATE RESULT</a></li>
+      <li class="tabs"><a data-toggle="tab" href="#menu2">UPDATE RESULT</a></li>
+      <li class="tabs"><a data-toggle="tab" href="#menu3">DELETE RECORD</a></li>
+      <li class="tabs"><a data-toggle="tab" href="#menu4">LOGOUT</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active ">
+        <h3>STUDENT RECORDS</h3>
+        <div class="container   record-table">
+          <div class="row rows">
+            <div class="col cols bg-info col-lg-2">ROLL NUMBER</div>
+            <div class="col cols col-lg-2 bg-info">NAME</div>
+            <div class="col cols bg-info col-lg-2">CLASS</div>
+            <div class="col cols col-lg-2 bg-info">DATE OF BIRTH</div>
+            <div class="col cols col-lg-2 bg-info">PERCENTAGE</div>
+            <div class="col cols col-lg-2 bg-info">STATUS(PASS/FAIL)</div>
+          </div>
+          <div class="row ">
+            <div class="col cols col-lg-2">Mathematics</div>
+            <div class="col cols col-lg-2">100</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+          </div>
+          <div class="row">
+            <div class="col  cols  col-lg-2">Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col cols  col-lg-2">40</div>
+            <div class="col  cols col-lg-2">89</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Hindi</div>
+            <div class="col  cols col-lg-2">100</div>
+            <div class="col cols  col-lg-2">40</div>
+            <div class="col  cols col-lg-2">90</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Social Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col  cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+            <div class="col cols  col-lg-2">83</div>
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Computer Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col  cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+            <div class="col cols  col-lg-2">83</div>
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Computer Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col  cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col cols col-lg-2">90</div>
+
+            <div class="col cols  col-lg-2">83</div>
+          </div>
+        </div>
+      </div>
+      <div id="menu1" class="tab-pane fade ">
+        <div class="row">
+          <div class="col std-details">
+            <div class="card std-details">
+              <div class="card-header">
+                <h1>STUDENT DETAILS</h1>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <input type="text" class="form-control" placeholder="NAME OF STUDENT"></li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="ROLL NUMBER"></li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="CLASS"></li>
+                <li class="list-group-item"> <input type="date" class="form-control" placeholder="DATE OF BIRTH"></li>
+                <li class="list-group-item"> <input type="text" class="form-control" placeholder="RESIDENTAL ADDRESS">
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col" style="display: inline;">
+
+          </div>
+          <div class="col" style="display: inline;">
+            <div class="card std-details">
+              <div class="card-header">
+                <h1>MARKS OBTAINED</h1>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="MATHEMATICS"></li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="SCIENCE"></li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="HINDI"></li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="SOCIAL SCIENCE">
+                </li>
+                <li class="list-group-item"> <input type="number" class="form-control" placeholder="COMPUTER SCIENCE">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col" style="display: inline;">
+
+          </div>
+        </div>
+
+
+      </div>
+      <div id="menu2" class="tab-pane fade" style="width: 1500px;">
+        <div class="card">
+          <div class="card-body">
+            <h1>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Roll No." aria-label="Recipient's username"
+                  aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">View Result</button>
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row rows">
+            <div class="col cols bg-info col-lg-2">Subject</div>
+            <div class="col cols bg-info col-lg-2">Max Marks</div>
+            <div class="col cols col-lg-2 bg-info">Pass Marks</div>
+            <div class="col cols col-lg-2 bg-info">Marks Obtained</div>
+          </div>
+          <div class="row ">
+            <div class="col cols col-lg-2">Mathematics</div>
+            <div class="col cols col-lg-2">100</div>
+            <div class="col cols col-lg-2">40</div>
+            <div class="col  cols  col-lg-2"><input class="marks" type="text" placeholder="89"></div>
+          </div>
+          <div class="row">
+            <div class="col  cols  col-lg-2">Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col cols  col-lg-2">40</div>
+            <div class="col  cols col-lg-2"><input class="marks" type="text" placeholder="89"></div>
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Hindi</div>
+            <div class="col  cols col-lg-2">100</div>
+            <div class="col cols  col-lg-2">40</div>
+            <div class="col  cols col-lg-2"><input class="marks" type="text" placeholder="89"></div>
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Social Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col  cols col-lg-2">40</div>
+            <div class="col  cols col-lg-2"><input class="marks" type="text" placeholder="89"></div>
+
+          </div>
+          <div class="row">
+            <div class="col  cols col-lg-2">Computer Science</div>
+            <div class="col cols  col-lg-2">100</div>
+            <div class="col  cols col-lg-2">40</div>
+            <div class="col  cols col-lg-2"><input class="marks" type="text" placeholder="89"></div>
+          </div>
+        </div>
+      </div>
+      <div id="menu3" class="tab-pane fade ">
+        <div class="card">
+          <div class="card-body">
+            <h1>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Roll No." aria-label="Recipient's username"
+                  aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Remove</button>
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+
+      </div>
+      <div id="menu3" class="tab-pane fade ">
+        <div class="card">
+          <div class="card-body">
+            <h1>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Roll No." aria-label="Recipient's username"
+                  aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Remove</button>
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+
+      </div>
+      <div id="menu4" class="tab-pane fade ">
+        <div class="card">
+          <div class="card-body">
+            <h1>
+              <div class="input-group mb-3">
+                <label>Logged Out Successfully.</label></div>
+            </h1>
+
+          </div>
+        </div>
+        </h1>
+      </div>
+    </div>
+
+  </div>
+  <!-- </div>
+  </div> -->
+
+  <script src="index.js" async defer></script>
+</body>
+
+</html>
